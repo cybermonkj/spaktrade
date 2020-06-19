@@ -1,5 +1,5 @@
 const express = require('express');
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 const app = express();
 
 app.use(express.static(__dirname + "/dist/"));
@@ -9,5 +9,5 @@ app.get(/.*/, function (req, res) {
 
 app.listen(port);
 
-console.log(`Crossift started at port ${port}`);
+console.log(`Spaktrade started at port ${port}`);
 console.log('Server Started Successfully');
