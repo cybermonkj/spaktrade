@@ -1,7 +1,7 @@
 <template>
     <div>
         <v-container>
-            <v-row>
+            <v-row class="mt-6">
                 <v-col
                 cols="12"
                 md="5"
@@ -9,7 +9,7 @@
                 >
                     <v-card flat>
                         <v-img
-                        
+                         src="@/assets/business.svg"
                         ></v-img>
                     </v-card>
                 </v-col>
@@ -136,7 +136,33 @@
 
         <v-sheet height="100"></v-sheet>
 
-        <v-sheet></v-sheet>
+        <v-sheet>
+            <v-container>
+                <v-row>
+                    <v-col cols="12" md="6" sm="12">
+                        <v-card-title class="headline pink--text text--darken-3 font-weight-bold">Explore a variety of crypto currencies</v-card-title>
+                        <v-card-text class="blockquote" style="font-size: 1.5rem !important;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam numquam quibusdam 
+                            vero ut, suscipit ipsam excepturi sapiente consequatur 
+                            nesciunt cupiditate maxime exercitationem earum commodi possimus unde dolore fugit ex. Impedit?</v-card-text>
+                            <v-card-text class="blockquote" style="font-size: 1.5rem !important;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam numquam quibusdam 
+                            vero ut, suscipit ipsam excepturi sapiente consequatur 
+                            nesciunt cupiditate maxime exercitationem earum commodi possimus unde dolore fugit ex. Impedit?</v-card-text>
+
+                            <v-container>
+                                <v-btn large dark ripple color="purple darken-3">Explore cryptocurrencies</v-btn>
+                            </v-container>
+                    </v-col>
+
+                    <v-col cols="12" md="6" sm="12">
+                        <v-img
+                         src="@/assets/bitcoin2.svg"
+                        ></v-img>
+                    </v-col>
+                </v-row>
+            </v-container>
+        </v-sheet>
+
+        <v-sheet height="100"></v-sheet>
     </div>
 </template>
 

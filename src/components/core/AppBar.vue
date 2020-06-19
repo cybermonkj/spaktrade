@@ -24,6 +24,8 @@
                  class="ml-1 mr-1"
                 >{{ bar.title }}<v-icon right>{{ bar.icon }}</v-icon></v-btn>
             </div>
+            <login />
+            <sign-up />
         </v-app-bar>
     </div>
 </template>
@@ -36,9 +38,16 @@ import { mdiTrendingUp } from '@mdi/js';
 import { mdiCastEducation } from '@mdi/js';
 import { mdiSkypeBusiness } from '@mdi/js';
 import { mdiMagnify } from '@mdi/js';
+import Login from '@/components/core/Login.vue';
+import SignUp from '@/components/core/Signup.vue';
 
 
 export default {
+    components: {
+        'login': Login,
+        'sign-up': SignUp,
+    },
+
     data() {
         return {
             searchIcon: mdiMagnify, 
