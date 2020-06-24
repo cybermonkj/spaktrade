@@ -24,8 +24,8 @@
                  class="ml-1 mr-1"
                 >{{ bar.title }}<v-icon right>{{ bar.icon }}</v-icon></v-btn>
             </div>
-            <login />
-            <sign-up />
+            <v-btn router to="/login" color="white" rounded outlined>Login</v-btn>
+
         </v-app-bar>
     </div>
 </template>
@@ -34,29 +34,29 @@
 <script>
 import { mdiTrademark } from '@mdi/js';
 import { mdiShopping } from '@mdi/js';
-import { mdiTrendingUp } from '@mdi/js';
-import { mdiCastEducation } from '@mdi/js';
-import { mdiSkypeBusiness } from '@mdi/js';
+import { mdiFeatureSearchOutline } from '@mdi/js';
+import { mdiBitcoin } from '@mdi/js';
+import { mdiContactsOutline } from '@mdi/js';
 import { mdiMagnify } from '@mdi/js';
-import Login from '@/components/core/Login.vue';
-import SignUp from '@/components/core/Signup.vue';
+// import Login from '@/components/users/Login.vue';
+// import SignUp from '@/components/users/Signup.vue';
 
 
 export default {
     components: {
-        'login': Login,
-        'sign-up': SignUp,
+        // 'login': Login,
+        // 'sign-up': SignUp,
     },
 
     data() {
         return {
             searchIcon: mdiMagnify, 
             barItems: [
-                { title: "Trading", icon: mdiTrademark, to: "/" },
-                { title: "Top Markets", icon: mdiShopping, to: "#!" },
-                { title: "Ivesting", icon: mdiTrendingUp, to: "#!" },
-                { title: "Education", icon: mdiCastEducation, to: "#!" },
-                { title: "Company", icon: mdiSkypeBusiness, to: "#!" }
+                { title: "Traders", icon: mdiTrademark, to: "/" },
+                { title: "Combos", icon: mdiShopping, to: "#!" },
+                { title: "Cryptos", icon: mdiBitcoin, to: "#!" },
+                { title: "Features", icon: mdiFeatureSearchOutline, to: "#!" },
+                { title: "Contact Us", icon: mdiContactsOutline, to: "#!" }
             ]
         }
     }
