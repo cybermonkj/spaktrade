@@ -74,7 +74,8 @@
                <v-card class="mx-auto volume" max-height="150" min-height="150" width="50%" elevation="12">
                    <v-contianer>
                        <v-row justify="start">
-                           <v-card-text class="headline mt-12">Trading Volume</v-card-text>
+                           <v-card-text class="body-1 mt-12">Trading Volume</v-card-text>
+                           <p class="display-1 pink--text text--darken-4">$123,676,80</p>
                        </v-row>
                    </v-contianer>
                </v-card>
