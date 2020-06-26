@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9c7e383b5339df118fbf1fead6c917dd.js"
+  "/precache-manifest.f706a1cb6fd86579ddb2b97de18ad6de.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "spaktrade"});
