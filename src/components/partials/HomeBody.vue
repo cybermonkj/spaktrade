@@ -10,7 +10,7 @@
                     <v-row justify="center">
                             <v-col cols="12" md="4" sm="12">
                                 <v-avatar tile size="100">
-                                    <v-icon>{{ testIcon }}</v-icon>
+                                    <v-icon color="indigo">{{ chartIcon }}</v-icon>
                                 </v-avatar>
                                 <p class="subtitle-1 font-weight-bold"  style="text-align: center !important;">Traders join Spak Trade</p>
                                 <v-container>
@@ -24,7 +24,7 @@
 
                             <v-col cols="12" md="4" sm="12">
                                 <v-avatar tile size="100">
-                                    <v-icon>{{ testIcon }}</v-icon>
+                                    <v-icon color="indigo">{{ testIcon }}</v-icon>
                                 </v-avatar>
                                 <p class="subtitle-1 font-weight-bold" style="text-align: center !important;" id="workTitle">Traders join Spak Trade</p>
                                 <v-container>
@@ -38,7 +38,7 @@
 
                             <v-col cols="12" md="4" sm="12">
                                 <v-avatar tile size="100">
-                                    <v-icon>{{ testIcon }}</v-icon>
+                                    <v-icon color="indigo">{{ transferIcon }}</v-icon>
                                 </v-avatar>
                                 <p class="subtitle-1 font-weight-bold" style="text-align: center !important;" id="workTitle">Traders join Spak Trade</p>
                                 <v-container>
@@ -71,11 +71,13 @@
 
        <v-sheet class="tradeVolume mt-12">
            <div class="text-center">
-               <v-card class="mx-auto volume" max-height="150" min-height="150" width="50%" elevation="12">
+               <v-card class="mx-auto volume"  width="50%" elevation="12">
                    <v-contianer>
                        <v-row justify="start">
                            <v-card-text class="body-1 mt-12">Trading Volume</v-card-text>
-                           <p class="display-1 pink--text text--darken-4">$123,676,80</p>
+                           <v-container>
+                               <p class="display-1 pink--text text--darken-4 font-weight-bold"  style="text-align: center !important;">$123,676,80</p>
+                           </v-container>
                        </v-row>
                    </v-contianer>
                </v-card>
@@ -377,7 +379,69 @@
             </v-card-text>
             <v-container>
                 <v-row>
-                    <v-col cols="12" md="6" sm="12"></v-col>
+                    <v-col cols="12" md="6" sm="12">
+                        <v-card flat elevation="0" style="background-color: transparent !important;">
+                            <v-container>
+                                <v-row justify="center">
+                                    <v-col cols="12" md="4" sm="4">
+                                        <v-avatar tile size="50">
+                                            <v-img
+                                                src="@/assets/password.svg"
+                                            ></v-img>
+                                        </v-avatar>
+                                    </v-col>
+
+                                    <v-col cols="12" md="8" sm="8">
+                                        <v-card-text>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam 
+                                        </v-card-text>
+                                    </v-col>
+                                     <v-col cols="12" md="4" sm="4">
+                                        <v-avatar tile size="50">
+                                            <v-img
+                                                src="@/assets/password.svg"
+                                            ></v-img>
+                                        </v-avatar>
+                                    </v-col>
+
+                                    <v-col cols="12" md="8" sm="8">
+                                        <v-card-text>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam 
+                                        </v-card-text>
+                                    </v-col>
+
+                                     <v-col cols="12" md="4" sm="4">
+                                        <v-avatar tile size="50">
+                                            <v-img
+                                                src="@/assets/password.svg"
+                                            ></v-img>
+                                        </v-avatar>
+                                    </v-col>
+
+                                    <v-col cols="12" md="8" sm="8">
+                                        <v-card-text>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam 
+                                        </v-card-text>
+                                    </v-col>
+
+                                     <v-col cols="12" md="4" sm="4">
+                                        <v-avatar tile size="50">
+                                            <v-img
+                                                src="@/assets/password.svg"
+                                            ></v-img>
+                                        </v-avatar>
+                                    </v-col>
+
+                                    <v-col cols="12" md="8" sm="8">
+                                        <v-card-text>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore veniam 
+                                        </v-card-text>
+                                    </v-col>
+                                </v-row>
+                            </v-container>
+                        </v-card>
+                    </v-col>
+
                     <v-col cols="12" md="6" sm="12">
                         <v-card elevation="1">
                             <v-container>
@@ -388,7 +452,6 @@
                                              label="First Name"
                                              outlined
                                              type="text"
-                                             dense
                                              required
                                             ></v-text-field>
                                         </v-col>
@@ -397,7 +460,6 @@
                                              label="Last Name"
                                              outlined
                                              type="text"
-                                             dense
                                              required
                                             ></v-text-field>
                                         </v-col>
@@ -502,6 +564,9 @@ import { mdiFindReplace } from "@mdi/js";
 import { mdiSpeedometer } from "@mdi/js";
 import { mdiHome } from '@mdi/js';
 import { mdiNewspaper } from '@mdi/js';
+import { mdiChartDonutVariant } from '@mdi/js';
+import { mdiBankTransferOut } from '@mdi/js';
+
 
 //eslint-disable-next-line no-unused-vars
 const gradients = [
@@ -521,6 +586,8 @@ export default {
             findIcon: mdiFindReplace,
             testIcon: mdiHome,
             newsIcon: mdiNewspaper,
+            chartIcon: mdiChartDonutVariant,
+            transferIcon: mdiBankTransferOut,
             
             // Sparkline
             fill: true,
